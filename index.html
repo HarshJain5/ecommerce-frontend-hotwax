@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Auth</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <p id="message" style="text-align: center;"></p>
+
+    <!-- register -->
+    <form id="registerForm" style="align-items: center;">
+        <h2 id="formTitle" style="text-align: center;">Register</h2>
+        <input type="text" id="regName" placeholder="Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+        <input type="password" id="regConfirmPassword" placeholder="Confirm Password">
+        <button type="submit">Register</button>
+        <p style="text-align: center;">Already have an account? <span id="showLogin">Login</span></p>
+    </form>
+
+    <!-- login -->
+    <form id="loginForm" style="display:none;">
+        <h2 id="formTitle" style="text-align: center;">Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button type="submit">Login</button>
+        <p style="text-align: center;">New user? <span id="showRegister">Register</span></p>
+    </form>
+
+    
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
